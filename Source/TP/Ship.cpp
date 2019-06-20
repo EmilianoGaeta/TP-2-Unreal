@@ -40,6 +40,8 @@ void AShip::BeginPlay()
 
 	showMessage = false;
 	pause = false;
+
+	GetCharacterMovement()->MaxWalkSpeed = speed * 100;
 }
 
 // Called every frame
@@ -92,8 +94,8 @@ void AShip::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AShip::Move(float forward, float right)
 {
-	AddMovementInput(FVector::ForwardVector, forward * speed);
-	AddMovementInput(FVector::RightVector, right * speed);
+	AddMovementInput(FVector::ForwardVector, forward);
+	AddMovementInput(FVector::RightVector, right);
 }
 
 void AShip::SetDirForward(float forward)
@@ -111,7 +113,8 @@ void AShip::SetForward(float deltatime)
 	if (_dirForward != 0 || _dirRight != 0) 
 	{
 		FVector dir = FVector(_dirForward, _dirRight, 0);
-		FVector currentDir = FMath::Lerp(GetActorForwardVector(), dir, deltatime * 20);
+		dir = dir.GetSafeNormal();
+		FVector currentDir = FMath::Lerp(GetActorForwardVector(), dir, deltatime * 15);
 		SetActorRotation(FRotator(0, currentDir.Rotation().Yaw, 0));
 	}
 }
