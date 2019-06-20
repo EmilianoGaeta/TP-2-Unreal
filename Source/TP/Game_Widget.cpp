@@ -7,12 +7,16 @@ void UGame_Widget::NativeTick(const FGeometry & MyGeometry, float InDeltaTime)
 {
 	shipLife = (float)ship->currentLife / _shipInitialLife;
 	message = ship->message;
+	bulletsAvailable = ship->bulletsTypesAmount > 1;
+	weaponsAvailable = ship->weaponsTypeAmount > 1;
 }
 
 void UGame_Widget::SetWidget()
 {
 	ship = Cast<AShip>(GetWorld()->GetFirstPlayerController()->GetPawn());
 	_shipInitialLife = ship->life;
+	bulletsAvailable = ship->bulletsTypesAmount > 1;
+	weaponsAvailable = ship->weaponsTypeAmount > 1;
 }
 
 void UGame_Widget::Unpause()

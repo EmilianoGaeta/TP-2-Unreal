@@ -35,6 +35,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void Unpause();
 
+	UPROPERTY(BlueprintReadWrite)
+		bool bulletsAvailable;
+	UPROPERTY(BlueprintReadWrite)
+		bool weaponsAvailable;
+
 private:
 
 	int _shipInitialLife;

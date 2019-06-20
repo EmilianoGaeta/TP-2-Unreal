@@ -89,18 +89,21 @@ public:
 	void SetBullet();
 	UFUNCTION(BlueprintCallable)
 	void Shoot();
-	UFUNCTION(BlueprintCallable)
-	void ReleaseShoot();
+
+	int bulletsTypesAmount;
+	int weaponsTypeAmount;
 
 private:
 
-	float _dirForward;
-	float _dirRight;
+	FVector _dirMovement;
+	FVector _dirView;
 	FVector lookDir;
 
 	//Ship
-	void SetDirForward(float forward);
-	void SetDirRight(float right);
+	void SetMovementForward(float forward);
+	void SetMovementRight(float right);
+	void SetDirectionForward(float forward);
+	void SetDirectionRight(float right);
 	void SetForward(float deltatime);
 
 	//Camera
@@ -124,8 +127,6 @@ private:
 	float _timeToReturn;
 	FVector _randomCameraPos;
 
-	void SetShootType();
-	bool _automatic;
 	bool _shoot;
 	float _shootTimer;
 
@@ -136,8 +137,6 @@ private:
 	float _hitTimer;
 	void HitColor(float deltaTime);
 
-	int _bullets;
-	int _weapons;
 
 	UFUNCTION()
 		void OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);

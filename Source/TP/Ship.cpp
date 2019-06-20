@@ -19,7 +19,6 @@ void AShip::BeginPlay()
 	lookDir = GetActorForwardVector();
 
 	_shakeCamera = false;
-	_automatic = true;
 	_shoot = false;
 	_hit = false;
 
@@ -30,8 +29,10 @@ void AShip::BeginPlay()
 		myMaterial->SetVectorParameterValue("HitColor", FColor::White);
 	}
 
-	_bullets = 1;
-	_weapons = 1;
+	bulletsTypesAmount = 1;
+	weaponsTypeAmount = 1;
+	_dirView = FVector(0, 0, 0);
+	_dirMovement = FVector(0, 0, 0);
 
 	currentLife = life;
 	lifeInterface = life;
@@ -49,7 +50,7 @@ void AShip::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	Move(_dirForward, _dirRight);
+	Move(_dirMovement.X, _dirMovement.Y);
 	SetForward(DeltaTime);
 
 	SetCameraPos(DeltaTime);
@@ -59,7 +60,7 @@ void AShip::Tick(float DeltaTime)
 	if (_shakeCamera)
 		ShakeCamera(DeltaTime);
 
-	if(_automatic && _shoot)
+	if(_shoot)
 	{
 		_shootTimer += DeltaTime;
 		if(_shootTimer >= coolDown)
@@ -81,13 +82,13 @@ void AShip::Tick(float DeltaTime)
 void AShip::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAxis("MoveForward", this, &AShip::SetDirForward);
-	PlayerInputComponent->BindAxis("MoveLeftRight", this, &AShip::SetDirRight);
+	PlayerInputComponent->BindAxis("MoveForward", this, &AShip::SetMovementForward);
+	PlayerInputComponent->BindAxis("MoveLeftRight", this, &AShip::SetMovementRight);
+	PlayerInputComponent->BindAxis("DirViewX", this, &AShip::SetDirectionForward);
+	PlayerInputComponent->BindAxis("DirViewY", this, &AShip::SetDirectionRight);
 
 	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &AShip::Shoot);
-	PlayerInputComponent->BindAction("Shoot", IE_Released, this, &AShip::ReleaseShoot);
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &AShip::Pause);
-	PlayerInputComponent->BindAction("ShootType", IE_Pressed, this, &AShip::SetShootType);
 	PlayerInputComponent->BindAction("ChangeBullet", IE_Pressed, this, &AShip::SetBullet);
 	PlayerInputComponent->BindAction("ChangeWeapon", IE_Pressed, this, &AShip::SetWeapon);
 }
@@ -98,22 +99,31 @@ void AShip::Move(float forward, float right)
 	AddMovementInput(FVector::RightVector, right);
 }
 
-void AShip::SetDirForward(float forward)
+void AShip::SetMovementForward(float forward)
 {
-	_dirForward = forward;
+	_dirMovement.X = forward;
 }
 
-void AShip::SetDirRight(float right)
+void AShip::SetMovementRight(float right)
 {
-	_dirRight = right;
+	_dirMovement.Y = right;
+}
+
+void AShip::SetDirectionForward(float forward)
+{
+	_dirView.X = forward;
+}
+
+void AShip::SetDirectionRight(float right)
+{
+	_dirView.Y = right;
 }
 
 void AShip::SetForward(float deltatime)
 {
-	if (_dirForward != 0 || _dirRight != 0) 
+	if (_dirView.X != 0 || _dirView.Y != 0)
 	{
-		FVector dir = FVector(_dirForward, _dirRight, 0);
-		dir = dir.GetSafeNormal();
+		FVector dir = _dirView.GetSafeNormal();
 		FVector currentDir = FMath::Lerp(GetActorForwardVector(), dir, deltatime * 15);
 		SetActorRotation(FRotator(0, currentDir.Rotation().Yaw, 0));
 	}
@@ -137,7 +147,7 @@ void AShip::SetCameraPos(float deltatime)
 //Shoot
 void AShip::Shoot()
 {
-	if(!_automatic)
+	if (!_shoot) 
 	{
 		UWorld* world = GetWorld();
 		for (auto i = 0; i < currentSpawnPoints.Num(); i++)
@@ -145,23 +155,14 @@ void AShip::Shoot()
 			SpawnBullet(world, bullet, currentSpawnPoints[i]);
 		}
 	}
-	else
-	{
-		_shoot = true;
-		_shootTimer = coolDown;
-	}
-}
-
-
-void AShip::ReleaseShoot()
-{
-	_shoot = false;
+	_shoot = !_shoot;
+	_shootTimer = coolDown;
 }
 
 void AShip::SetBullet()
 {
 	indexBullet++;
-	if (indexBullet >= _bullets) indexBullet = 0;
+	if (indexBullet >= bulletsTypesAmount) indexBullet = 0;
 	if (indexBullet >= bullets.Num()) indexBullet = 0;
 	bullet = bullets[indexBullet];
 }
@@ -169,7 +170,7 @@ void AShip::SetBullet()
 void AShip::SetWeapon()
 {
 	indexSpawnPoint++;
-	if(indexSpawnPoint >= _weapons) indexSpawnPoint = 0;
+	if(indexSpawnPoint >= weaponsTypeAmount) indexSpawnPoint = 0;
 	if (indexSpawnPoint >= weapons.Num()) indexSpawnPoint = 0;
 	currentSpawnPoints = weapons[indexSpawnPoint];
 }
@@ -197,12 +198,6 @@ void AShip::SetWeapons(TArray<UChildActorComponent*>  spawn)
 	indexSpawnPoint = 0;
 	bullet = bullets[0];
 	indexBullet = 0;
-}
-
-void AShip::SetShootType()
-{
-	_automatic = !_automatic;
-	_shoot = false;
 }
 
 void AShip::Damage(int damage)
@@ -268,13 +263,13 @@ void AShip::OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AA
 		{
 			showMessage = true;
 			message = FText::FromString(FString(TEXT("MEJORA DE MUNICION")));
-			_bullets++;
+			bulletsTypesAmount++;
 		}
 		else if(b->type == Pickable_Type::Weapon_Booster)
 		{
 			showMessage = true;
 			message = FText::FromString(FString(TEXT("MEJORA DE ARMA")));
-			_weapons++;
+			weaponsTypeAmount++;
 		}
 		else
 		{
