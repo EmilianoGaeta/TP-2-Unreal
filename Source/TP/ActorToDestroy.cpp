@@ -21,7 +21,7 @@ void AActorToDestroy::BeginPlay()
 
 	myMaterial = UMaterialInstanceDynamic::Create(mesh->GetMaterial(0), this);
 	mesh->SetMaterial(0, myMaterial);
-	myMaterial->SetVectorParameterValue("HitColor", FColor::White);
+	myMaterial->SetScalarParameterValue("Hit", 0);
 
 	_timer = 0;
 	hit = false;
@@ -40,7 +40,7 @@ void AActorToDestroy::Tick(float DeltaTime)
 			_timer += DeltaTime;
 			if(_timer >=  0.15f)
 			{
-				myMaterial->SetVectorParameterValue("HitColor", FColor::White);
+				myMaterial->SetScalarParameterValue("Hit", 0);
 				hit = true;
 			}
 		}
@@ -55,7 +55,7 @@ void AActorToDestroy::Damage(int damage)
 
 		hit = true;
 		_timer = 0;
-		myMaterial->SetVectorParameterValue("HitColor", FColor::Red);
+		myMaterial->SetScalarParameterValue("Hit", 0.7f);
 
 		if (lifeInterface <= 0)
 		{

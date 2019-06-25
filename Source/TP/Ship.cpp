@@ -9,6 +9,7 @@ AShip::AShip()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	originMaterial = ConstructorHelpers::FObjectFinder<UMaterialInterface>(TEXT("Material'/Game/Models/Ship/Material/Ship_Material.Ship_Material'")).Object;
+	originMaterialShiel= ConstructorHelpers::FObjectFinder<UMaterialInterface>(TEXT("Material'/Game/Models/ActorToDestroy/Shield_Material_2.Shield_Material_2'")).Object;
 }
 
 // Called when the game starts or when spawned
@@ -28,6 +29,16 @@ void AShip::BeginPlay()
 		ship->SetMaterial(0, myMaterial);
 		myMaterial->SetVectorParameterValue("HitColor", FColor::White);
 	}
+	if (originMaterialShiel) 
+	{
+		myMaterialShield = UMaterialInstanceDynamic::Create(originMaterialShiel, shielMesh);
+		shielMesh->SetMaterial(0, myMaterialShield);
+		myMaterialShield->SetScalarParameterValue("Hit", 0);
+	}
+
+	shielMesh->SetVisibility(false);
+	shielMesh->SetGenerateOverlapEvents(false);
+	shielMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	bulletsTypesAmount = 1;
 	weaponsTypeAmount = 1;
@@ -205,6 +216,23 @@ void AShip::SetWeapons(TArray<UChildActorComponent*>  spawn)
 
 void AShip::Damage(int damage)
 {
+	if (_shielLife > 0) 
+	{
+		_shielLife -= damage;
+		_hit = true;
+		_hitTimer = 0;
+
+		myMaterialShield->SetScalarParameterValue("Hit", 0.7f);
+		if (_shielLife <= 0)
+		{
+			shielMesh->SetVisibility(false);
+			shielMesh->SetGenerateOverlapEvents(false);
+			shielMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			_shielLife = 0;
+		}
+		return;
+	}
+
 	lifeInterface -= damage;
 
 	if (lifeInterface > 0)
@@ -253,6 +281,7 @@ void AShip::HitColor(float deltaTime)
 	if (_hitTimer >= 0.2f)
 	{
 		_hit = false;
+		myMaterialShield->SetScalarParameterValue("Hit", 0);
 		myMaterial->SetVectorParameterValue("HitColor", FColor::White);
 	}
 }
@@ -278,6 +307,16 @@ void AShip::OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AA
 		{
 			lifeInterface += life / 3;
 			if (lifeInterface > life) lifeInterface = life;
+		}
+		else 
+		{
+			showMessage = true;
+			message = FText::FromString(FString(TEXT("ESCUDO ACTIVADO")));
+
+			_shielLife = 100;
+			shielMesh->SetVisibility(true);
+			shielMesh->SetGenerateOverlapEvents(true);
+			shielMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 		}
 
 		b->Destroy();

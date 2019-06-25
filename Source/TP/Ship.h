@@ -55,6 +55,9 @@ public:
 	bool showMessage;
 	bool pause;
 
+	UPROPERTY(BlueprintReadWrite)
+		UStaticMeshComponent*  shielMesh;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -134,6 +137,10 @@ private:
 
 	UMaterialInterface* originMaterial;
 	UMaterialInstanceDynamic* myMaterial;
+
+	UMaterialInterface* originMaterialShiel;
+	UMaterialInstanceDynamic* myMaterialShield;
+	float _shielLife;
 
 	bool _hit;
 	float _hitTimer;
