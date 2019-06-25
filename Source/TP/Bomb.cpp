@@ -22,7 +22,7 @@ void ABomb::BeginPlay()
 	{
 		myMaterial = UMaterialInstanceDynamic::Create(originMaterial, this);
 		bomb->SetMaterial(0, myMaterial);
-		myMaterial->SetVectorParameterValue("HitColor", FColor::White);
+		myMaterial->SetScalarParameterValue("Hit", 0);
 	}
 }
 
@@ -70,7 +70,7 @@ void ABomb::Damage(int damage)
 		{
 			hit = true;
 			hitTimer = 0;
-			myMaterial->SetVectorParameterValue("HitColor", FColor::Red);
+			myMaterial->SetScalarParameterValue("Hit", 0.6);
 		}
 
 		lifeInterface -= damage;
@@ -102,7 +102,7 @@ void ABomb::HitColor(float deltaTime)
 	if (hitTimer >= 0.15f) 
 	{
 		hit = false;
-		myMaterial->SetVectorParameterValue("HitColor", FColor::White);
+		myMaterial->SetScalarParameterValue("Hit", 0);
 	}
 }
 

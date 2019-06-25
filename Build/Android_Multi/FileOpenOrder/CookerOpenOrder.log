@@ -7,327 +7,353 @@
 "D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/BombBall_Material.uasset" 6
 "D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/SplitMetalBallEmissive_Texture.uasset" 7
 "D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/WheelBallEmissive_Texture.uasset" 8
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset" 9
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset" 10
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 11
-"../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 12
-"../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 13
-"../../../Engine/Content/EditorLandscapeResources/DataLayer.uasset" 14
-"../../../Engine/Content/EditorMaterials/GizmoMaterial.uasset" 15
-"../../../Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset" 16
-"../../../Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset" 17
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 18
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 19
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset" 20
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset" 21
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset" 22
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset" 23
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset" 24
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset" 25
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset" 26
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset" 27
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset" 28
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset" 29
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset" 30
-"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset" 31
-"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset" 32
-"../../../Engine/Content/EditorMaterials/Camera/CineMat.uasset" 33
-"../../../Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.uasset" 34
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Arm.uasset" 35
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Base.uasset" 36
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 37
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.uasset" 38
-"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 39
-"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 40
-"../../../Engine/Content/EditorResources/BSPVertex.uasset" 41
-"../../../Engine/Content/EditorResources/EmptyActor.uasset" 42
-"../../../Engine/Content/EditorResources/S_Actor.uasset" 43
-"../../../Engine/Content/EditorResources/S_Trigger.uasset" 44
-"../../../Engine/Content/EditorResources/AudioIcons/S_AudioComponent_AutoActivate.uasset" 45
-"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 46
-"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 47
-"../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 48
-"../../../Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset" 49
-"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 50
-"../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 51
-"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 52
-"../../../Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset" 53
-"../../../Engine/Content/EngineDebugMaterials/HeatmapGradient.uasset" 54
-"../../../Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset" 55
-"../../../Engine/Content/EngineDebugMaterials/ClothMaterial.uasset" 56
-"../../../Engine/Content/EngineDebugMaterials/ClothMaterial_WF.uasset" 57
-"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 58
-"../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 59
-"../../../Engine/Content/EngineDebugMaterials/GeomMaterial.uasset" 60
-"../../../Engine/Content/EngineDebugMaterials/M_SimpleTranslucent.uasset" 61
-"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 62
-"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 63
-"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 64
-"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 65
-"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 66
-"../../../Engine/Content/EngineFonts/Roboto.uasset" 67
-"../../../Engine/Content/EngineFonts/Faces/RobotoTiny.uasset" 68
-"../../../Engine/Content/EngineFonts/RobotoTiny.uasset" 69
-"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 70
-"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 71
-"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 72
-"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 73
-"../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 74
-"../../../Engine/Content/EngineMaterials/DefaultBloomKernel.uasset" 75
-"../../../Engine/Content/EngineMaterials/DefaultBokeh.uasset" 76
-"../../../Engine/Content/EngineMaterials/DefaultDiffuse.uasset" 77
-"../../../Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset" 78
-"../../../Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset" 79
-"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 80
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 81
-"../../../Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset" 82
-"../../../Engine/Content/EngineFonts/RobotoDistanceField.uasset" 83
-"../../../Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset" 84
-"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset" 85
-"../../../Engine/Content/EngineMaterials/EditorBrushMaterial.uasset" 86
-"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 87
-"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 88
-"../../../Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset" 89
-"../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 90
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 91
-"../../../Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset" 92
-"../../../Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset" 93
-"../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 94
-"../../../Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset" 95
-"../../../Engine/Content/EngineResources/WhiteSquareTexture.uasset" 96
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough.uasset" 97
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset" 98
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset" 99
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 100
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset" 101
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset" 102
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset" 103
-"../../../Engine/Content/EngineMaterials/DefaultMaterial.uasset" 104
-"../../../Engine/Content/EngineMeshes/Cylinder.uasset" 105
-"../../../Engine/Content/EngineMeshes/Sphere.uasset" 106
-"../../../Engine/Content/EngineResources/Black.uasset" 107
-"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 108
-"../../../Engine/Content/EngineResources/DefaultTextureCube.uasset" 109
-"../../../Engine/Content/EngineResources/DefaultVolumeTexture2D.uasset" 110
-"../../../Engine/Content/EngineResources/DefaultVolumeTexture.uasset" 111
-"../../../Engine/Content/EngineResources/GradientTexture0.uasset" 112
-"../../../Engine/Content/EngineSounds/Master.uasset" 113
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 114
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 115
-"../../../Engine/Content/Maps/Templates/Thumbnails/Default.uasset" 116
-"../../../Engine/Content/Maps/Templates/Thumbnails/VR-Basic.uasset" 117
-"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 118
-"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 119
-"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 120
-"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 121
-"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 122
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 123
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 124
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 125
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 126
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 127
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 128
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 129
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 130
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 131
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 132
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 133
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 134
-"../../../Engine/Content/Tutorial/ContentIntroCurve.uasset" 135
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset" 136
-"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 137
-"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 138
-"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 139
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 140
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 141
-"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 142
-"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 143
-"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 144
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 145
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 146
-"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 147
-"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 148
-"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 149
-"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 150
-"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 151
-"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 152
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/PokeAHoleMaterial.uasset" 153
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_AO.uasset" 154
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_Color.uasset" 155
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_Normal.uasset" 156
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/GearVRControllerMaterial.uasset" 157
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/GearVrController.uasset" 158
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/touchController_albedo.uasset" 159
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/touchController_controlmap.uasset" 160
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/touchController_mat.uasset" 161
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/LeftTouchController.uasset" 162
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/RiftHMD.uasset" 163
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/RightTouchController.uasset" 164
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Menu_Widget_Bp.uasset" 165
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/chintzy.uasset" 166
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/chintzy_Font.uasset" 167
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Credits.uasset" 168
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Button.uasset" 169
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/CredistMenu_Bp.uasset" 170
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Credits_Bp.uasset" 171
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Credits.uasset" 172
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Credits_Sound.uasset" 173
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Credits_Sound_Cue.uasset" 174
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Credits.umap" 175
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_HowToPlay.uasset" 176
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/HowToPlayMenu_Bp.uasset" 177
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/HowToPlay_Bp.uasset" 178
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_HowToPlay.uasset" 179
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/HowToPlat_Sound.uasset" 180
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/HowToPlat_Sound_Cue.uasset" 181
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/HowToPlay.umap" 182
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 183
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 184
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 185
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 186
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 187
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 188
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 189
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 190
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Space/SkyBox_Space.uasset" 191
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Space/SkyBox_Material.uasset" 192
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 193
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 194
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/Activate_Boss_Bp.uasset" 195
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/Event_OCDoor_Bp.uasset" 196
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/Event_SpawnBombs_Bp.uasset" 197
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/EventNode_Bp.uasset" 198
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Alien_Floor_01.uasset" 199
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Alien_Floor_01_nor.uasset" 200
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Material/AlineFloor_Material.uasset" 201
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Models/Floor_1.uasset" 202
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Prefab/Floor_1.uasset" 203
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Models/Floor_2.uasset" 204
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Prefab/Floor_2.uasset" 205
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Portal.uasset" 206
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Material/Portal_Material.uasset" 207
-"../../../Engine/Content/BasicShapes/Plane.uasset" 208
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Prefab/Portal_Bp.uasset" 209
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/HUD_Bp.uasset" 210
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Pause.uasset" 211
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Shoot.uasset" 212
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/ShootActivated.uasset" 213
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Switch_Bullet.uasset" 214
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Switch_Weapon.uasset" 215
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Life.uasset" 216
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/LifeBar.uasset" 217
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Life_Bp.uasset" 218
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Message_Bp.uasset" 219
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/PauseMenu_Bp.uasset" 220
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Game_Bp.uasset" 221
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Bullet_3.uasset" 222
-"../../../Engine/Content/BasicShapes/Sphere.uasset" 223
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Ship_Bullet/Bullet_Sin_Bp.uasset" 224
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Bullet_2.uasset" 225
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Ship_Bullet/Bullet_Spiral_Bp.uasset" 226
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Bullet.uasset" 227
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Ship_Bullet/Ship_Bullet_Bp.uasset" 228
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_Emission.uasset" 229
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_MetallicSmoothness.uasset" 230
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_Normal.uasset" 231
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_Yellow.uasset" 232
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Material.uasset" 233
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Meshes/StarSparrow.uasset" 234
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Prefab/Ship_Bp.uasset" 235
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Level.uasset" 236
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Alien_Floor.uasset" 237
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/ActorToDestroy/Shield_Material.uasset" 238
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/ActorToDestroy/ActorToDestroy_BP.uasset" 239
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/BombAtomShield_Material.uasset" 240
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/AtomicBall_Texture.uasset" 241
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/AtomicBall_Material.uasset" 242
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/AtomicBall.uasset" 243
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Atom_Bp.uasset" 244
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/EyeBall_Bullet_Material.uasset" 245
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Eye_Bullet_Bp.uasset" 246
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Laser/Laser_Material.uasset" 247
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Laser/Laser_Enemy.uasset" 248
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/EyeBall_Texture.uasset" 249
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/EyeBall_Material.uasset" 250
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/EyeBall.uasset" 251
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Eye_Bp.uasset" 252
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/SpikeBall_Texture.uasset" 253
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/SpikeBall_Material.uasset" 254
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/SpikeBall.uasset" 255
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Spike_Bp.uasset" 256
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/Saw.uasset" 257
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/Saw.uasset" 258
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/SplitMetalBall_Texture.uasset" 259
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/SplitMetalBall_Material.uasset" 260
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/SplitMetalBall.uasset" 261
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_SplitMetal_Bp.uasset" 262
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/Weel_Spikes_Material.uasset" 263
-"../../../Engine/Content/BasicShapes/Cone.uasset" 264
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 265
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/WheelBall_Texture.uasset" 266
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/WheelBall_Material.uasset" 267
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/WheelBall.uasset" 268
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Wheel_Bp.uasset" 269
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Selector_Bullet_1.uasset" 270
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_Bullet_1.uasset" 271
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Bullet_1.uasset" 272
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Bullet_1_Material.uasset" 273
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Bullet_1.uasset" 274
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Bullet_Booster_1.uasset" 275
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_Bullet_2.uasset" 276
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Bullet_2.uasset" 277
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Bullet_2_Material.uasset" 278
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Bullet_2.uasset" 279
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Bullet_Booster_2.uasset" 280
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset" 281
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.uasset" 282
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_LifeCell.uasset" 283
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Life_Cell.uasset" 284
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Life_Cell_Normal.uasset" 285
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Life_Cell_Material.uasset" 286
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Life_Cell.uasset" 287
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Life_Booster.uasset" 288
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_Weapon.uasset" 289
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Weapon.uasset" 290
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Weapon_Material.uasset" 291
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Weapon_1.uasset" 292
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Weapon_1_Booster.uasset" 293
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Weapon_2.uasset" 294
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Weapon_2_Booster.uasset" 295
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Door/Door_Material.uasset" 296
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Door/HitBox_Material.uasset" 297
-"../../../Engine/Content/BasicShapes/Cube.uasset" 298
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Door/Door_Bp.uasset" 299
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Boss_Bullet_Material.uasset" 300
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Boss_1_Bullet_Bp.uasset" 301
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/DarkSkull.uasset" 302
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/FinalBoss.uasset" 303
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Low-Poly_Skull.uasset" 304
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Boss_Level_1_Bp.uasset" 305
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Level_1_BuiltData.uasset" 306
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Game_Sound.uasset" 307
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Game_Sound_Cue.uasset" 308
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Level_1.umap" 309
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Lose.uasset" 310
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/LoseMenu_Bp.uasset" 311
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Lose_Bp.uasset" 312
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Lose.uasset" 313
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Lose_Sound.uasset" 314
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Lose_Sound_Cue.uasset" 315
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Lose.umap" 316
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Menu.uasset" 317
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/MainMenu_Bp.uasset" 318
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Menu_Bp.uasset" 319
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Menu.uasset" 320
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Menu_Sound.uasset" 321
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Menu_Sound_Cue.uasset" 322
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Menu.umap" 323
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Win.uasset" 324
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/WinMenu_Bp.uasset" 325
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Win_Bp.uasset" 326
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Win.uasset" 327
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Win_Sound.uasset" 328
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Win_Sound_Cue.uasset" 329
-"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Win.umap" 330
-"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 331
-"../../../Engine/Content/Maps/Entry.umap" 332
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Fire_SubUV.uasset" 9
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Fire_Tiled_D.uasset" 10
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_Fire_SubUV.uasset" 11
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Water_N.uasset" 12
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_Heat_Distortion.uasset" 13
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradient.uasset" 14
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_Radial_Gradient.uasset" 15
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Smoke_SubUV.uasset" 16
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Smoke_Tiled_D.uasset" 17
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_smoke_subUV.uasset" 18
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/P_Fire.uasset" 19
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/P_Smoke.uasset" 20
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Spark_Core.uasset" 21
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_Spark.uasset" 22
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/P_Sparks.uasset" 23
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/P_Steam_Lit.uasset" 24
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Dust_Particle_D.uasset" 25
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_Dust_Particle.uasset" 26
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_radial_ramp.uasset" 27
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset" 28
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset" 29
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 30
+"../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 31
+"../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 32
+"../../../Engine/Content/EditorLandscapeResources/DataLayer.uasset" 33
+"../../../Engine/Content/EditorMaterials/GizmoMaterial.uasset" 34
+"../../../Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset" 35
+"../../../Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset" 36
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 37
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 38
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset" 39
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset" 40
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset" 41
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset" 42
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset" 43
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset" 44
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset" 45
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset" 46
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset" 47
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset" 48
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset" 49
+"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset" 50
+"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset" 51
+"../../../Engine/Content/EditorMaterials/Camera/CineMat.uasset" 52
+"../../../Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.uasset" 53
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Arm.uasset" 54
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Base.uasset" 55
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 56
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.uasset" 57
+"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 58
+"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 59
+"../../../Engine/Content/EditorResources/BSPVertex.uasset" 60
+"../../../Engine/Content/EditorResources/EmptyActor.uasset" 61
+"../../../Engine/Content/EditorResources/S_Actor.uasset" 62
+"../../../Engine/Content/EditorResources/S_Trigger.uasset" 63
+"../../../Engine/Content/EditorResources/AudioIcons/S_AudioComponent_AutoActivate.uasset" 64
+"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 65
+"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 66
+"../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 67
+"../../../Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset" 68
+"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 69
+"../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 70
+"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 71
+"../../../Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset" 72
+"../../../Engine/Content/EngineDebugMaterials/HeatmapGradient.uasset" 73
+"../../../Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset" 74
+"../../../Engine/Content/EngineDebugMaterials/ClothMaterial.uasset" 75
+"../../../Engine/Content/EngineDebugMaterials/ClothMaterial_WF.uasset" 76
+"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 77
+"../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 78
+"../../../Engine/Content/EngineDebugMaterials/GeomMaterial.uasset" 79
+"../../../Engine/Content/EngineDebugMaterials/M_SimpleTranslucent.uasset" 80
+"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 81
+"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 82
+"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 83
+"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 84
+"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 85
+"../../../Engine/Content/EngineFonts/Roboto.uasset" 86
+"../../../Engine/Content/EngineFonts/Faces/RobotoTiny.uasset" 87
+"../../../Engine/Content/EngineFonts/RobotoTiny.uasset" 88
+"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 89
+"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 90
+"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 91
+"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 92
+"../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 93
+"../../../Engine/Content/EngineMaterials/DefaultBloomKernel.uasset" 94
+"../../../Engine/Content/EngineMaterials/DefaultBokeh.uasset" 95
+"../../../Engine/Content/EngineMaterials/DefaultDiffuse.uasset" 96
+"../../../Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset" 97
+"../../../Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset" 98
+"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 99
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 100
+"../../../Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset" 101
+"../../../Engine/Content/EngineFonts/RobotoDistanceField.uasset" 102
+"../../../Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset" 103
+"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset" 104
+"../../../Engine/Content/EngineMaterials/EditorBrushMaterial.uasset" 105
+"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 106
+"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 107
+"../../../Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset" 108
+"../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 109
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 110
+"../../../Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset" 111
+"../../../Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset" 112
+"../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 113
+"../../../Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset" 114
+"../../../Engine/Content/EngineResources/WhiteSquareTexture.uasset" 115
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough.uasset" 116
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset" 117
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset" 118
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 119
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset" 120
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset" 121
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset" 122
+"../../../Engine/Content/EngineMaterials/DefaultMaterial.uasset" 123
+"../../../Engine/Content/EngineMeshes/Cylinder.uasset" 124
+"../../../Engine/Content/EngineMeshes/Sphere.uasset" 125
+"../../../Engine/Content/EngineResources/Black.uasset" 126
+"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 127
+"../../../Engine/Content/EngineResources/DefaultTextureCube.uasset" 128
+"../../../Engine/Content/EngineResources/DefaultVolumeTexture2D.uasset" 129
+"../../../Engine/Content/EngineResources/DefaultVolumeTexture.uasset" 130
+"../../../Engine/Content/EngineResources/GradientTexture0.uasset" 131
+"../../../Engine/Content/EngineSounds/Master.uasset" 132
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 133
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 134
+"../../../Engine/Content/Maps/Templates/Thumbnails/Default.uasset" 135
+"../../../Engine/Content/Maps/Templates/Thumbnails/VR-Basic.uasset" 136
+"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 137
+"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 138
+"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 139
+"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 140
+"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 141
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 142
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 143
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 144
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 145
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 146
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 147
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 148
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 149
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 150
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 151
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 152
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 153
+"../../../Engine/Content/Tutorial/ContentIntroCurve.uasset" 154
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset" 155
+"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 156
+"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 157
+"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 158
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 159
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 160
+"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 161
+"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 162
+"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 163
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 164
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 165
+"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 166
+"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 167
+"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 168
+"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 169
+"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 170
+"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 171
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/PokeAHoleMaterial.uasset" 172
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_AO.uasset" 173
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_Color.uasset" 174
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/GearVRController_Normal.uasset" 175
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/GearVRControllerMaterial.uasset" 176
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/GearVrController.uasset" 177
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/touchController_albedo.uasset" 178
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Textures/touchController_controlmap.uasset" 179
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/touchController_mat.uasset" 180
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/LeftTouchController.uasset" 181
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/RiftHMD.uasset" 182
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Meshes/RightTouchController.uasset" 183
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Menu_Widget_Bp.uasset" 184
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/chintzy.uasset" 185
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/chintzy_Font.uasset" 186
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Credits.uasset" 187
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Button.uasset" 188
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/CredistMenu_Bp.uasset" 189
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Credits_Bp.uasset" 190
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Credits.uasset" 191
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Credits_Sound.uasset" 192
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Credits_Sound_Cue.uasset" 193
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Credits.umap" 194
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_HowToPlay.uasset" 195
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/HowToPlayMenu_Bp.uasset" 196
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/HowToPlay_Bp.uasset" 197
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_HowToPlay.uasset" 198
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/HowToPlat_Sound.uasset" 199
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/HowToPlat_Sound_Cue.uasset" 200
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/HowToPlay.umap" 201
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 202
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 203
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 204
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 205
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 206
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 207
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 208
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 209
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Space/SkyBox_Space.uasset" 210
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Space/SkyBox_Material.uasset" 211
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 212
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 213
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/Activate_Boss_Bp.uasset" 214
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/Event_OCDoor_Bp.uasset" 215
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/Event_SpawnBombs_Bp.uasset" 216
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/EventNodes/EventNode_Bp.uasset" 217
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Alien_Floor_01.uasset" 218
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Alien_Floor_01_nor.uasset" 219
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Material/AlineFloor_Material.uasset" 220
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Models/Floor_1.uasset" 221
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Prefab/Floor_1.uasset" 222
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Models/Floor_2.uasset" 223
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Prefab/Floor_2.uasset" 224
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Portal.uasset" 225
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Material/Portal_Material.uasset" 226
+"../../../Engine/Content/BasicShapes/Plane.uasset" 227
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Prefab/Portal_Bp.uasset" 228
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/HUD_Bp.uasset" 229
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Pause.uasset" 230
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Shoot.uasset" 231
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/ShootActivated.uasset" 232
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Switch_Bullet.uasset" 233
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Buttons/Switch_Weapon.uasset" 234
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Life.uasset" 235
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/LifeBar.uasset" 236
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Life_Bp.uasset" 237
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Message_Bp.uasset" 238
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/PauseMenu_Bp.uasset" 239
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Game_Bp.uasset" 240
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Bullet_3.uasset" 241
+"../../../Engine/Content/BasicShapes/Sphere.uasset" 242
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Ship_Bullet/Bullet_Sin_Bp.uasset" 243
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Bullet_2.uasset" 244
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Ship_Bullet/Bullet_Spiral_Bp.uasset" 245
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Bullet.uasset" 246
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Ship_Bullet/Ship_Bullet_Bp.uasset" 247
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_Emission.uasset" 248
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_MetallicSmoothness.uasset" 249
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_Normal.uasset" 250
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Textures/StarSparrow_Yellow.uasset" 251
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Material/Ship_Material.uasset" 252
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Meshes/StarSparrow.uasset" 253
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Ship/Prefab/Ship_Bp.uasset" 254
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Level.uasset" 255
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Floor/Textures/Alien_Floor.uasset" 256
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/ActorToDestroy/Shield_Material.uasset" 257
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/ActorToDestroy/ActorToDestroy_BP.uasset" 258
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/BombAtomShield_Material.uasset" 259
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/AtomicBall_Texture.uasset" 260
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/AtomicBall_Material.uasset" 261
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/AtomicBall.uasset" 262
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Atom_Bp.uasset" 263
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/EyeBall_Bullet_Material.uasset" 264
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Eye_Bullet_Bp.uasset" 265
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Laser/Laser_Material.uasset" 266
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Laser/Laser_Enemy.uasset" 267
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/EyeBall_Texture.uasset" 268
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/EyeBall_Material.uasset" 269
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/EyeBall.uasset" 270
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Eye_Bp.uasset" 271
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Burst_M.uasset" 272
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_Burst.uasset" 273
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Textures/T_Explosion_SubUV.uasset" 274
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/M_explosion_subUV.uasset" 275
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Materials/m_flare_01.uasset" 276
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/P_Explosion.uasset" 277
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Particles/Prefabs/Explosion_Particle.uasset" 278
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/SpikeBall_Texture.uasset" 279
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/SpikeBall_Material.uasset" 280
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/SpikeBall.uasset" 281
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Spike_Bp.uasset" 282
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/Saw.uasset" 283
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/Saw.uasset" 284
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/SplitMetalBall_Texture.uasset" 285
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/SplitMetalBall_Material.uasset" 286
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/SplitMetalBall.uasset" 287
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_SplitMetal_Bp.uasset" 288
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/Weel_Spikes_Material.uasset" 289
+"../../../Engine/Content/BasicShapes/Cone.uasset" 290
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 291
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Textures/WheelBall_Texture.uasset" 292
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Materials/WheelBall_Material.uasset" 293
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Models/WheelBall.uasset" 294
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Bombs/Prefabs/Bomb_Wheel_Bp.uasset" 295
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Selector_Bullet_1.uasset" 296
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_Bullet_1.uasset" 297
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Bullet_1.uasset" 298
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Bullet_1_Material.uasset" 299
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Bullet_1.uasset" 300
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Bullet_Booster_1.uasset" 301
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_Bullet_2.uasset" 302
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Bullet_2.uasset" 303
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Bullet_2_Material.uasset" 304
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Bullet_2.uasset" 305
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Bullet_Booster_2.uasset" 306
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset" 307
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.uasset" 308
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_LifeCell.uasset" 309
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Life_Cell.uasset" 310
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Life_Cell_Normal.uasset" 311
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Life_Cell_Material.uasset" 312
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Life_Cell.uasset" 313
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Life_Booster.uasset" 314
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Selector_Weapon.uasset" 315
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Textures/Weapon.uasset" 316
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Material/Weapon_Material.uasset" 317
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Weapon_1.uasset" 318
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Weapon_1_Booster.uasset" 319
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Models/Weapon_2.uasset" 320
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Boosters/Prefabs/Weapon_2_Booster.uasset" 321
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Door/Door_Material.uasset" 322
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Door/HitBox_Material.uasset" 323
+"../../../Engine/Content/BasicShapes/Cube.uasset" 324
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/Door/Door_Bp.uasset" 325
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Boss_Bullet_Material.uasset" 326
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Boss_1_Bullet_Bp.uasset" 327
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/DarkSkull.uasset" 328
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/FinalBoss.uasset" 329
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Low-Poly_Skull.uasset" 330
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Models/FinalBoss/Boss_Level_1_Bp.uasset" 331
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Level_1_BuiltData.uasset" 332
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Game_Sound.uasset" 333
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Game_Sound_Cue.uasset" 334
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Level_1.umap" 335
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Lose.uasset" 336
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/LoseMenu_Bp.uasset" 337
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Lose_Bp.uasset" 338
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Lose.uasset" 339
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Lose_Sound.uasset" 340
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Lose_Sound_Cue.uasset" 341
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Lose.umap" 342
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Menu.uasset" 343
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/MainMenu_Bp.uasset" 344
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Menu_Bp.uasset" 345
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Menu.uasset" 346
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Menu_Sound.uasset" 347
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Menu_Sound_Cue.uasset" 348
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Menu.umap" 349
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Textures/Backgrounds_Win.uasset" 350
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/WinMenu_Bp.uasset" 351
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/Menus/Win_Bp.uasset" 352
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/GameModes/GM_Win.uasset" 353
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Win_Sound.uasset" 354
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Sounds/Win_Sound_Cue.uasset" 355
+"D:/06-Sexto Cuatrimestre/Unreal 2/TP2/TP-2-Unreal/Content/Levels/Win.umap" 356
+"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 357
+"../../../Engine/Content/Maps/Entry.umap" 358
