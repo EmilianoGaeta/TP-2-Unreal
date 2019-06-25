@@ -8,7 +8,6 @@ ADebuff::ADebuff()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -16,7 +15,6 @@ void ADebuff::BeginPlay()
 {
 	Super::BeginPlay();
 	_ship = GetWorld()->GetFirstPlayerController()->GetPawn();
-	
 }
 
 // Called every frame
@@ -24,8 +22,13 @@ void ADebuff::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	myRing->SetRelativeRotation(FRotator(myRing->RelativeRotation.Pitch - DeltaTime * 30, myRing->RelativeRotation.Yaw, myRing->RelativeRotation.Roll));
+
 	_dir = (_ship->GetActorLocation() - GetActorLocation()).GetSafeNormal();
 
-	SetActorLocation(GetActorLocation() + _dir * speed);
+	auto currentDir = FMath::Lerp(GetActorRotation().Vector(), _dir, DeltaTime * 10);
+	SetActorRotation(FRotator(0, currentDir.Rotation().Yaw, 0));
+
+	SetActorLocation(GetActorLocation() + currentDir * speed);
 }
 

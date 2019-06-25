@@ -28,6 +28,8 @@ public:
 		float speed;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float Duration;
+	UPROPERTY(BlueprintReadWrite)
+		UChildActorComponent*  myRing;
 
 private:
 
