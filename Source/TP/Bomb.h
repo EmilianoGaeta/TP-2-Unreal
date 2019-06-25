@@ -6,6 +6,7 @@
 #include "Engine/World.h"
 #include "ConstructorHelpers.h"
 #include "Ship.h"
+#include "MyParticle.h"
 #include "GetDamage.h"
 #include "GameFramework/Actor.h"
 #include "Bomb.generated.h"
@@ -21,7 +22,9 @@ public:
 	// Sets default values for this actor's properties
 	ABomb();
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<class UParticleEmitter> deathParticle;
+		TSubclassOf<class AMyParticle> deathParticle;
+	UPROPERTY(EditAnywhere)
+		float deathParticuleScale;
 	UPROPERTY(EditAnywhere)
 		int life;
 	UPROPERTY(EditAnywhere)
