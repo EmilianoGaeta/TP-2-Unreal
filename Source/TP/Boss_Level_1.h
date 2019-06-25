@@ -10,11 +10,12 @@
 #include "Event_OCDoor.h"
 #include "Weapon.h"
 #include "ActorToDestroy.h"
+#include "Boss.h"
 #include "GameFramework/Actor.h"
 #include "Boss_Level_1.generated.h"
 
 UCLASS()
-class TP_API ABoss_Level_1 : public AActor, public IGetDamage, public IWeapon
+class TP_API ABoss_Level_1 : public ABoss, public IGetDamage, public IWeapon
 {
 	GENERATED_BODY()
 	
@@ -31,8 +32,6 @@ public:
 	UPROPERTY(EditAnywhere)
 		AActorToDestroy* shield;
 	UPROPERTY(EditAnywhere)
-		int life;
-	UPROPERTY(EditAnywhere)
 		AActor* pivot;
 	UPROPERTY(EditAnywhere)
 		float pivotSpeed;
@@ -46,13 +45,15 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 		UStaticMeshComponent* mesh;
 
-	void Activate();
+	virtual void Activate() override;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	UMaterialInstanceDynamic* myMaterial;
+
+	virtual void Death(float deltaTime) override;
 
 public:	
 	// Called every frame
@@ -64,8 +65,6 @@ private:
 
 	UFUNCTION()
 		void NextFace();
-
-	void Death(float deltaTime);
 
 	int _phase;
 

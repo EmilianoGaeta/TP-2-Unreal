@@ -22,13 +22,18 @@ void ADebuff::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	myRing->SetRelativeRotation(FRotator(myRing->RelativeRotation.Pitch - DeltaTime * 30, myRing->RelativeRotation.Yaw, myRing->RelativeRotation.Roll));
+	auto distance = FVector::Distance(_ship->GetActorLocation(), GetActorLocation());
+	if (distance < 4000) 
+	{
 
-	_dir = (_ship->GetActorLocation() - GetActorLocation()).GetSafeNormal();
+		myRing->AddLocalRotation(FRotator(DeltaTime * 120, 0, 0));
 
-	auto currentDir = FMath::Lerp(GetActorRotation().Vector(), _dir, DeltaTime * 10);
-	SetActorRotation(FRotator(0, currentDir.Rotation().Yaw, 0));
+		_dir = (_ship->GetActorLocation() - GetActorLocation()).GetSafeNormal();
 
-	SetActorLocation(GetActorLocation() + currentDir * speed);
+		auto currentDir = FMath::Lerp(GetActorRotation().Vector(), _dir, DeltaTime * 10);
+		SetActorRotation(FRotator(0, currentDir.Rotation().Yaw, 0));
+
+		SetActorLocation(GetActorLocation() + currentDir * speed);
+	}
 }
 

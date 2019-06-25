@@ -250,7 +250,10 @@ void AShip::Damage(int damage)
 		return;
 	}
 
-	lifeInterface -= damage;
+	if ((float)lifeInterface / life > 0.1f)
+		lifeInterface -= damage;
+	else
+		lifeInterface -= damage / 2;
 
 	if (lifeInterface > 0)
 	{
@@ -352,6 +355,9 @@ void AShip::DebufShoot(float duration)
 	debufTimer = duration;
 	_hasDefubEffect = true;
 	_canShoot = false;
+
+	showMessage = true;
+	message = FText::FromString(FString(TEXT("ERROR EN ARMA")));
 }
 
 void AShip::EndDebufShoot()
@@ -366,6 +372,9 @@ void AShip::DebufMovement(float duration)
 	_hasDefubEffect = true;
 
 	GetCharacterMovement()->MaxWalkSpeed = speed * 100 / 2;
+
+	showMessage = true;
+	message = FText::FromString(FString(TEXT("FALLO DEL MOTOR")));
 }
 
 void AShip::EndDebufMovement()

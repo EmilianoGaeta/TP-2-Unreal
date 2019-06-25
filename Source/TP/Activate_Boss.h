@@ -3,7 +3,7 @@
 #pragma once
 
 #include "Engine.h"
-#include "Boss_Level_1.h"
+#include "Boss.h"
 #include "EventNode.h"
 #include "Activate_Boss.generated.h"
 
@@ -22,7 +22,7 @@ public:
 	virtual void Activate() override;
 
 	UPROPERTY(EditAnywhere)
-		ABoss_Level_1* boss;
+		ABoss* boss;
 
 protected:
 
