@@ -5,14 +5,16 @@
 #include "Engine.h"
 #include "Bullet.h"
 #include "Bullet_Spiral.h"
+#include "Bullet_Sin.h"
 #include "GameFramework/Actor.h"
 #include "Door.generated.h"
 
 UENUM()
 enum DoorType
 {
-	Normal     UMETA(DisplayName = "Normal"),
-	Special        UMETA(DisplayName = "Special"),
+	Type1     UMETA(DisplayName = "Type1"),
+	Type2        UMETA(DisplayName = "Type2"),
+	Type3        UMETA(DisplayName = "Type3")
 };
 
 UCLASS()

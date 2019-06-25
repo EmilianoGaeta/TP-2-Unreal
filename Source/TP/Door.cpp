@@ -34,7 +34,7 @@ void ADoor::BeginPlay()
 	{
 		_myMaterial = UMaterialInstanceDynamic::Create(mat, this);
 		hitbox->SetMaterial(0, _myMaterial);
-		_myMaterial->SetVectorParameterValue("Color", myType == DoorType::Special ? FColor::Red : FColor::Blue);
+		_myMaterial->SetVectorParameterValue("Color", myType == DoorType::Type1 ? FColor::Blue : myType == DoorType::Type2 ? FColor::Red : FColor::Green);
 	}
 
 	_hit = false;
@@ -101,7 +101,7 @@ void ADoor::Open()
 
 	_hitTimer = 0;
 	_hit = false;
-	_myMaterial->SetVectorParameterValue("Color", myType == DoorType::Special ? FColor::Red : FColor::Blue);
+	_myMaterial->SetVectorParameterValue("Color", myType == DoorType::Type1 ? FColor::Blue : myType == DoorType::Type2 ? FColor::Red : FColor::Green);
 }
 
 
@@ -109,7 +109,33 @@ void ADoor::OnHitPlayer(class UPrimitiveComponent* OverlappedComp, class AActor*
 {
 	if(_canOpen)
 	{
-		if(myType==DoorType::Special)
+		if(myType==DoorType::Type1)
+		{
+			ABullet_Spiral* b2 = Cast<ABullet_Spiral>(OtherActor);
+			if (b2) return;
+			ABullet_Sin* b3 = Cast<ABullet_Sin>(OtherActor);
+			if (b3) return;
+
+			ABullet* b = Cast<ABullet>(OtherActor);
+			if (b)
+			{
+				life -= b->damage;
+				if (life <= 0)
+				{
+					open = true;
+					_canOpen = false;
+					_timer = 0;
+					_myMaterial->SetVectorParameterValue("Color", FColor::Black);
+				}
+				else
+				{
+					_hitTimer = 0;
+					_hit = true;
+					_myMaterial->SetVectorParameterValue("Color", FColor::White);
+				}
+			}
+		}
+		else if(myType == DoorType::Type2)
 		{
 			ABullet_Spiral* b = Cast<ABullet_Spiral>(OtherActor);
 			if (b)
@@ -132,7 +158,7 @@ void ADoor::OnHitPlayer(class UPrimitiveComponent* OverlappedComp, class AActor*
 		}
 		else
 		{
-			ABullet* b = Cast<ABullet>(OtherActor);
+			ABullet_Sin* b = Cast<ABullet_Sin>(OtherActor);
 			if (b)
 			{
 				life -= b->damage;
@@ -160,7 +186,7 @@ void ADoor::HitColor(float deltaTime)
 	if (_hitTimer >= 0.15f)
 	{
 		_hit = false;
-		_myMaterial->SetVectorParameterValue("Color", myType == DoorType::Special ? FColor::Red : FColor::Blue);
+		_myMaterial->SetVectorParameterValue("Color", myType == DoorType::Type1 ? FColor::Blue : myType == DoorType::Type2 ? FColor::Red : FColor::Green);
 	}
 }
 

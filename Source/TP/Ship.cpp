@@ -34,6 +34,8 @@ void AShip::BeginPlay()
 	_dirView = FVector(0, 0, 0);
 	_dirMovement = FVector(0, 0, 0);
 
+	_coolDown = shootTimes[0];
+
 	currentLife = life;
 	lifeInterface = life;
 
@@ -63,7 +65,7 @@ void AShip::Tick(float DeltaTime)
 	if(iAmshooting)
 	{
 		_shootTimer += DeltaTime;
-		if(_shootTimer >= coolDown)
+		if(_shootTimer >= _coolDown)
 		{
 			UWorld* world = GetWorld();
 			for (auto i = 0; i < currentSpawnPoints.Num(); i++)
@@ -156,7 +158,7 @@ void AShip::Shoot()
 		}
 	}
 	iAmshooting = !iAmshooting;
-	_shootTimer = coolDown;
+	_shootTimer = _coolDown;
 }
 
 void AShip::SetBullet()
@@ -165,6 +167,7 @@ void AShip::SetBullet()
 	if (indexBullet >= bulletsTypesAmount) indexBullet = 0;
 	if (indexBullet >= bullets.Num()) indexBullet = 0;
 	bullet = bullets[indexBullet];
+	_coolDown = shootTimes[indexBullet];
 }
 
 void AShip::SetWeapon()
@@ -271,7 +274,7 @@ void AShip::OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AA
 			message = FText::FromString(FString(TEXT("MEJORA DE ARMA")));
 			weaponsTypeAmount++;
 		}
-		else
+		else if(b->type == Pickable_Type::Life_Booster)
 		{
 			lifeInterface += life / 3;
 			if (lifeInterface > life) lifeInterface = life;

@@ -12,6 +12,7 @@ enum Pickable_Type
 	Bullet_Booster     UMETA(DisplayName = "BulletBooster"),
 	Weapon_Booster        UMETA(DisplayName = "WeaponBooster"),
 	Life_Booster        UMETA(DisplayName = "LifeBooster"),
+	Shiel_Booster        UMETA(DisplayName = "ShieldBooster")
 };
 
 UCLASS()

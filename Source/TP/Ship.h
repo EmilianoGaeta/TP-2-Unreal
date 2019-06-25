@@ -27,8 +27,6 @@ public:
 		float life;
 	UPROPERTY(EditAnywhere)
 		float speed;
-	UPROPERTY(EditAnywhere)
-		float coolDown;
 
 	UPROPERTY(BlueprintReadWrite)
 		 UChildActorComponent*  myCamera;
@@ -39,6 +37,8 @@ public:
 		
 	UPROPERTY(EditAnywhere)
 		TArray<TSubclassOf<class ABullet>> bullets;
+	UPROPERTY(EditAnywhere)
+		TArray <float> shootTimes;
 
 	UPROPERTY(EditAnywhere)
 		float cameraSpeed;
@@ -100,6 +100,7 @@ private:
 	FVector _dirMovement;
 	FVector _dirView;
 	FVector lookDir;
+	float _coolDown;
 
 	//Ship
 	void SetMovementForward(float forward);
