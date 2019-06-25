@@ -20,7 +20,8 @@ class TP_API ABomb : public AActor, public IGetDamage
 public:	
 	// Sets default values for this actor's properties
 	ABomb();
-
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UParticleEmitter> deathParticle;
 	UPROPERTY(EditAnywhere)
 		int life;
 	UPROPERTY(EditAnywhere)

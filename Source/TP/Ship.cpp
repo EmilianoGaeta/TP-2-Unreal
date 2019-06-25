@@ -19,7 +19,7 @@ void AShip::BeginPlay()
 	lookDir = GetActorForwardVector();
 
 	_shakeCamera = false;
-	_shoot = false;
+	iAmshooting = false;
 	_hit = false;
 
 	if (originMaterial)
@@ -60,7 +60,7 @@ void AShip::Tick(float DeltaTime)
 	if (_shakeCamera)
 		ShakeCamera(DeltaTime);
 
-	if(_shoot)
+	if(iAmshooting)
 	{
 		_shootTimer += DeltaTime;
 		if(_shootTimer >= coolDown)
@@ -147,7 +147,7 @@ void AShip::SetCameraPos(float deltatime)
 //Shoot
 void AShip::Shoot()
 {
-	if (!_shoot) 
+	if (!iAmshooting) 
 	{
 		UWorld* world = GetWorld();
 		for (auto i = 0; i < currentSpawnPoints.Num(); i++)
@@ -155,7 +155,7 @@ void AShip::Shoot()
 			SpawnBullet(world, bullet, currentSpawnPoints[i]);
 		}
 	}
-	_shoot = !_shoot;
+	iAmshooting = !iAmshooting;
 	_shootTimer = coolDown;
 }
 

@@ -40,9 +40,6 @@ void ABoss_Level_1::BeginPlay()
 	myMaterial->SetVectorParameterValue("HitColor", FColor::White);
 
 	_activate = false;
-
-	_deathTimer = 0;
-	iDied = false;
 }
 
 // Called every frame
@@ -114,13 +111,8 @@ void ABoss_Level_1::Damage(int damage)
 
 void ABoss_Level_1::Death(float deltaTime)
 {
-	iDied = true;
-	_deathTimer += deltaTime;
-	if (_deathTimer >= 2)
-	{
-		openDoor->Activate();
-		Destroy();
-	}
+	openDoor->Activate();
+	Destroy();
 }
 
 void ABoss_Level_1::Activate()

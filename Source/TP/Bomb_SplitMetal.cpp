@@ -55,8 +55,11 @@ void ABomb_SplitMetal::Tick(float DeltaTime)
 void ABomb_SplitMetal::OnStartOverlapPlayer(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
 	_ship = Cast<IGetDamage>(OtherActor);
-	_ship->Damage(damage);
-	_timerToDamage = 0;
+	if (_ship) 
+	{
+		_ship->Damage(damage);
+		_timerToDamage = 0;
+	}
 }
 
 void ABomb_SplitMetal::OnEndOverlapPlayer(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)

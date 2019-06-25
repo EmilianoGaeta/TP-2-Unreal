@@ -46,9 +46,6 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 		UStaticMeshComponent* mesh;
 
-	UPROPERTY(BlueprintReadWrite)
-		bool iDied;
-
 	void Activate();
 
 protected:
@@ -80,6 +77,4 @@ private:
 	bool hit;
 
 	bool _activate;
-
-	float _deathTimer;
 };

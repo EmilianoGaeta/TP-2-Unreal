@@ -78,17 +78,19 @@ public:
 	virtual void Damage(int damage) override;
 	UPROPERTY(BlueprintReadWrite)
 		int currentLife;
+	UPROPERTY(BlueprintReadWrite)
+		bool iAmshooting;
 
 	FText message;
 
 	UFUNCTION(BlueprintCallable)
-	void Pause();
+		void Pause();
 	UFUNCTION(BlueprintCallable)
-	void SetWeapon();
+		void SetWeapon();
 	UFUNCTION(BlueprintCallable)
-	void SetBullet();
+		void SetBullet();
 	UFUNCTION(BlueprintCallable)
-	void Shoot();
+		void Shoot();
 
 	int bulletsTypesAmount;
 	int weaponsTypeAmount;
@@ -127,7 +129,6 @@ private:
 	float _timeToReturn;
 	FVector _randomCameraPos;
 
-	bool _shoot;
 	float _shootTimer;
 
 	UMaterialInterface* originMaterial;

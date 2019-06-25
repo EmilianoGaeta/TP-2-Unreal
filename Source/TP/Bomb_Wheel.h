@@ -35,11 +35,6 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void Death() override;
-
-	UPROPERTY(BlueprintReadWrite)
-		bool iDied;
-
 protected:
 
 	virtual void BeginPlay() override;
@@ -58,6 +53,4 @@ private:
 
 	float _timerToDamage;
 	IGetDamage* _ship;
-
-	float _deathTimer;
 };

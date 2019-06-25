@@ -22,8 +22,6 @@ void ABomb_Spike::BeginPlay()
 		_dir = (_nextPoint - GetActorLocation()).GetUnsafeNormal();
 		_sum = 1;
 	}
-	_deathTimer = 0;
-	iDied = false;
 }
 
 void ABomb_Spike::Tick(float DeltaTime)
@@ -58,17 +56,6 @@ void ABomb_Spike::MoveWayPoints()
 			_sum *= -1;
 		_nextPoint = wayPoints[_currentWayPoint]->GetActorLocation();
 		_dir = (_nextPoint - GetActorLocation()).GetUnsafeNormal();
-	}
-}
-
-void ABomb_Spike::Death()
-{
-	iDied = true;
-	_deathTimer += deltaTime;
-	if(_deathTimer >= 2)
-	{
-		myDeath.Broadcast();
-		Destroy();
 	}
 }
 

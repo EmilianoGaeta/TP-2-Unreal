@@ -84,6 +84,12 @@ void ABomb::Damage(int damage)
 void ABomb::Death()
 {
 	myDeath.Broadcast();
+	if (deathParticle) 
+	{
+		UWorld* world = GetWorld();
+		FActorSpawnParameters parameters;
+		auto p = world->SpawnActor<UParticleEmitter>(deathParticle, GetTransform(), parameters);
+	}
 	Destroy();
 }
 

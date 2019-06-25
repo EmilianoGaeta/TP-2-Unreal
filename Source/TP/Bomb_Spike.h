@@ -41,12 +41,8 @@ public:
 		float amplitude;
 	UPROPERTY(EditAnywhere)
 		float frecuency;
-	UPROPERTY(BlueprintReadWrite)
-		bool iDied;
 
 	virtual void Tick(float DeltaTime) override;
-
-	virtual void Death() override;
 	
 protected:
 
@@ -58,7 +54,6 @@ private:
 	void MoveWayPoints();
 
 	float _timer;
-	float _deathTimer;
 
 	//WayPoints
 	FVector _nextPoint;

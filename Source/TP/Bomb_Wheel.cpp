@@ -15,9 +15,6 @@ void ABomb_Wheel::BeginPlay()
 
 	mesh->OnComponentBeginOverlap.AddDynamic(this, &ABomb_Wheel::OnStartOverlapPlayer);
 	mesh->OnComponentEndOverlap.AddDynamic(this, &ABomb_Wheel::OnEndOverlapPlayer);
-
-	_deathTimer = 0;
-	iDied = false;
 }
 
 void ABomb_Wheel::Tick(float DeltaTime)
@@ -43,13 +40,14 @@ void ABomb_Wheel::Move()
 {
 	_timer += _deltaTime;
 
-	FVector dir = center->GetActorLocation() - GetActorLocation();
-	SetActorRotation(dir.Rotation());
-
 	FVector pos = center->GetActorLocation() + FVector(FMath::Cos(_timer), FMath::Sin(_timer), 0) * amplitude * 100;
 	FVector currentDir = (pos - GetActorLocation()).GetUnsafeNormal();
 	currentDir = FVector(currentDir.X, currentDir.Y, 0);
 	SetActorLocation(GetActorLocation() + currentDir * _deltaTime * speed * 100);
+
+	FVector dir = (center->GetActorLocation() - GetActorLocation()).GetSafeNormal();
+	dir = FMath::Lerp(GetActorRotation().Vector(), dir, _deltaTime * 5);
+	SetActorRotation(dir.Rotation());
 
 	weel->SetRelativeRotationExact(FRotator(weel->RelativeRotation.Pitch + _deltaTime * weelSpeed * 10, weel->RelativeRotation.Yaw, weel->RelativeRotation.Roll));
 }
@@ -64,15 +62,4 @@ void ABomb_Wheel::OnStartOverlapPlayer(UPrimitiveComponent * OverlappedComp, AAc
 void ABomb_Wheel::OnEndOverlapPlayer(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	_ship = nullptr;
-}
-
-void ABomb_Wheel::Death()
-{
-	iDied = true;
-	_deathTimer += deltaTime;
-	if (_deathTimer >= 2)
-	{
-		myDeath.Broadcast();
-		Destroy();
-	}
 }
