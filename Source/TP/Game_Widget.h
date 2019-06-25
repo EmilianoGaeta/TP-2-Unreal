@@ -22,6 +22,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float shipLife;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float shipShield;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float shipDebuf;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		AShip* ship;
 
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;

@@ -57,6 +57,12 @@ public:
 
 	UPROPERTY(BlueprintReadWrite)
 		UStaticMeshComponent*  shielMesh;
+	UPROPERTY(EditAnywhere)
+		float shielMaxLife;
+	float shielLife;
+
+	float debufTime;
+	float debufTimer;
 
 protected:
 	// Called when the game starts or when spawned
@@ -98,7 +104,17 @@ public:
 	int bulletsTypesAmount;
 	int weaponsTypeAmount;
 
+	UFUNCTION(BlueprintCallable)
+	void DebufShoot(float duration);
+	void EndDebufShoot();
+	UFUNCTION(BlueprintCallable)
+	void DebufMovement(float duration);
+	void EndDebufMovement();
+
 private:
+
+	bool _hasDefubEffect;
+	bool _canShoot;
 
 	FVector _dirMovement;
 	FVector _dirView;
@@ -139,8 +155,7 @@ private:
 	UMaterialInstanceDynamic* myMaterial;
 
 	UMaterialInterface* originMaterialShiel;
-	UMaterialInstanceDynamic* myMaterialShield;
-	float _shielLife;
+	UMaterialInstanceDynamic* myMaterialShield;	
 
 	bool _hit;
 	float _hitTimer;

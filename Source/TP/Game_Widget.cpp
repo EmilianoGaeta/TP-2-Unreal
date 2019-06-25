@@ -6,6 +6,8 @@
 void UGame_Widget::NativeTick(const FGeometry & MyGeometry, float InDeltaTime)
 {
 	shipLife = (float)ship->currentLife / _shipInitialLife;
+	shipShield = (float)ship->shielLife / ship->shielMaxLife;
+	shipDebuf = (float)ship->debufTimer / ship->debufTime;
 	message = ship->message;
 	bulletsAvailable = ship->bulletsTypesAmount > 1;
 	weaponsAvailable = ship->weaponsTypeAmount > 1;

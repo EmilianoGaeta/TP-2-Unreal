@@ -50,6 +50,12 @@ void AShip::BeginPlay()
 	currentLife = life;
 	lifeInterface = life;
 
+	shielLife = 0;
+	debufTime = 1;
+	debufTimer = 0;
+	_hasDefubEffect = false;
+	_canShoot = true;
+
 	myMesh->OnComponentBeginOverlap.AddDynamic(this, &AShip::OnOverlapBooster);
 
 	showMessage = false;
@@ -73,7 +79,7 @@ void AShip::Tick(float DeltaTime)
 	if (_shakeCamera)
 		ShakeCamera(DeltaTime);
 
-	if(iAmshooting)
+	if(iAmshooting && _canShoot)
 	{
 		_shootTimer += DeltaTime;
 		if(_shootTimer >= _coolDown)
@@ -89,6 +95,17 @@ void AShip::Tick(float DeltaTime)
 
 	if (_hit)
 		HitColor(DeltaTime);
+
+	if (_hasDefubEffect) 
+	{
+		debufTimer -= DeltaTime;
+		if (debufTimer <= 0) 
+		{
+			EndDebufMovement();
+			EndDebufShoot();
+			_hasDefubEffect = false;
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -160,7 +177,7 @@ void AShip::SetCameraPos(float deltatime)
 //Shoot
 void AShip::Shoot()
 {
-	if (!iAmshooting) 
+	if (!iAmshooting && _canShoot)
 	{
 		UWorld* world = GetWorld();
 		for (auto i = 0; i < currentSpawnPoints.Num(); i++)
@@ -216,19 +233,19 @@ void AShip::SetWeapons(TArray<UChildActorComponent*>  spawn)
 
 void AShip::Damage(int damage)
 {
-	if (_shielLife > 0) 
+	if (shielLife > 0) 
 	{
-		_shielLife -= damage;
+		shielLife -= damage;
 		_hit = true;
 		_hitTimer = 0;
 
 		myMaterialShield->SetScalarParameterValue("Hit", 0.7f);
-		if (_shielLife <= 0)
+		if (shielLife <= 0)
 		{
 			shielMesh->SetVisibility(false);
 			shielMesh->SetGenerateOverlapEvents(false);
 			shielMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-			_shielLife = 0;
+			shielLife = 0;
 		}
 		return;
 	}
@@ -313,7 +330,7 @@ void AShip::OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AA
 			showMessage = true;
 			message = FText::FromString(FString(TEXT("ESCUDO ACTIVADO")));
 
-			_shielLife = 100;
+			shielLife = shielMaxLife;
 			shielMesh->SetVisibility(true);
 			shielMesh->SetGenerateOverlapEvents(true);
 			shielMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
@@ -326,4 +343,32 @@ void AShip::OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AA
 void AShip::Pause()
 {
 	pause = !pause;
+}
+
+//Debufs
+void AShip::DebufShoot(float duration)
+{
+	debufTime = duration;
+	debufTimer = duration;
+	_hasDefubEffect = true;
+	_canShoot = false;
+}
+
+void AShip::EndDebufShoot()
+{
+	_canShoot = true;
+}
+
+void AShip::DebufMovement(float duration)
+{
+	debufTime = duration;
+	debufTimer = duration;
+	_hasDefubEffect = true;
+
+	GetCharacterMovement()->MaxWalkSpeed = speed * 100 / 2;
+}
+
+void AShip::EndDebufMovement()
+{
+	GetCharacterMovement()->MaxWalkSpeed = speed * 100;
 }
