@@ -41,9 +41,11 @@ void ABomb_Wheel::Move()
 	_timer += _deltaTime;
 
 	FVector pos = center->GetActorLocation() + FVector(FMath::Cos(_timer), FMath::Sin(_timer), 0) * amplitude * 100;
-	FVector currentDir = (pos - GetActorLocation()).GetUnsafeNormal();
-	currentDir = FVector(currentDir.X, currentDir.Y, 0);
-	SetActorLocation(GetActorLocation() + currentDir * _deltaTime * speed * 100);
+	FVector currentDir = pos - GetActorLocation();
+	if (currentDir.Size() > speed * _deltaTime * 100)
+		SetActorLocation(GetActorLocation() + currentDir.GetSafeNormal() * speed * _deltaTime * 100);
+	else
+		SetActorLocation(pos);
 
 	FVector dir = (center->GetActorLocation() - GetActorLocation()).GetSafeNormal();
 	dir = FMath::Lerp(GetActorRotation().Vector(), dir, _deltaTime * 5);
