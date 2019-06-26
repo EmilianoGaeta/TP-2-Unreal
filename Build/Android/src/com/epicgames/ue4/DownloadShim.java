@@ -1,10 +1,10 @@
 package com.epicgames.ue4;
 
-import com.EspacioProfundo.OBBDownloaderService;
-import com.EspacioProfundo.DownloaderActivity;
+import com.TheShip.OBBDownloaderService;
+import com.TheShip.DownloaderActivity;
 import android.app.Activity;
 import com.google.android.vending.expansion.downloader.Helpers;
-import com.EspacioProfundo.OBBData;
+import com.TheShip.OBBData;
 
 
 public class DownloadShim

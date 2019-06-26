@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.EspacioProfundo;
+package com.TheShip;
 
 import com.google.android.vending.expansion.downloader.DownloaderClientMarshaller;
 

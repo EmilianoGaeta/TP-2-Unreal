@@ -53,7 +53,7 @@ protected:
 
 	UMaterialInstanceDynamic* myMaterial;
 
-	virtual void Death(float deltaTime) override;
+	virtual void Death() override;
 
 public:	
 	// Called every frame

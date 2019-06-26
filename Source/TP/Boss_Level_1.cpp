@@ -53,7 +53,7 @@ void ABoss_Level_1::Tick(float DeltaTime)
 		NextFace();
 
 	if (death)
-		Death(DeltaTime);
+		Death();
 
 	auto dir = _ship->GetActorLocation() - GetActorLocation();
 	SetActorRotation(FRotator(0, dir.Rotation().Yaw, 0));
@@ -109,8 +109,10 @@ void ABoss_Level_1::Damage(int damage)
 		death = true;
 }
 
-void ABoss_Level_1::Death(float deltaTime)
+void ABoss_Level_1::Death()
 {
+	Super::Death();
+
 	openDoor->Activate();
 	Destroy();
 }

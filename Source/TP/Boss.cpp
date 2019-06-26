@@ -28,7 +28,15 @@ void ABoss::Activate()
 {
 }
 
-void ABoss::Death(float deltaTime)
+void ABoss::Death()
 {
+	if (deathParticle)
+	{
+		UWorld* world = GetWorld();
+		FActorSpawnParameters parameters;
+		auto p = world->SpawnActor<AMyParticle>(deathParticle, GetTransform(), parameters);
+		if (deathParticuleScale != 0)
+			p->SetActorScale3D(FVector(1, 1, 1) * deathParticuleScale);
+	}
 }
 

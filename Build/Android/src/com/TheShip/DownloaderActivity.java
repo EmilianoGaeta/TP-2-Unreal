@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.EspacioProfundo;
+package com.TheShip;
 
 import com.android.vending.expansion.zipfile.ZipResourceFile;
 import com.android.vending.expansion.zipfile.ZipResourceFile.ZipEntryRO;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.EspacioProfundo;
+package com.TheShip;
 
 import com.google.android.vending.expansion.downloader.impl.DownloaderService;
 
@@ -61,6 +61,6 @@ public class OBBDownloaderService extends DownloaderService {
      */
     @Override
     public String getAlarmReceiverClassName() {
-        return com.EspacioProfundo.AlarmReceiver.class.getName();
+        return com.TheShip.AlarmReceiver.class.getName();
     }
 }
