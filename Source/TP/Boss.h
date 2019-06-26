@@ -32,8 +32,12 @@ public:
 	UPROPERTY(EditAnywhere)
 		int life;
 
+	int maxLife;
+
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class AMyParticle> deathParticle;
 	UPROPERTY(EditAnywhere)
 		float deathParticuleScale;
+
+	bool bossActivated;
 };

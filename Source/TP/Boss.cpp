@@ -16,6 +16,8 @@ void ABoss::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	maxLife = life;
+	bossActivated = false;
 }
 
 // Called every frame
@@ -26,6 +28,7 @@ void ABoss::Tick(float DeltaTime)
 
 void ABoss::Activate()
 {
+	bossActivated = true;
 }
 
 void ABoss::Death()

@@ -100,6 +100,7 @@ void ABoss_Level_1::NextFace()
 void ABoss_Level_1::Damage(int damage)
 {
 	lifeInterface -= damage;
+	life = lifeInterface;
 
 	hit = true;
 	_timerHit = 0;
@@ -119,6 +120,7 @@ void ABoss_Level_1::Death()
 
 void ABoss_Level_1::Activate()
 {
+	Super::Activate();
 	_activate = true;
 	shield->activate = _activate;
 }

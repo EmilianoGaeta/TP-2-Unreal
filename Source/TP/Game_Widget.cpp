@@ -11,6 +11,16 @@ void UGame_Widget::NativeTick(const FGeometry & MyGeometry, float InDeltaTime)
 	message = ship->message;
 	bulletsAvailable = ship->bulletsTypesAmount > 1;
 	weaponsAvailable = ship->weaponsTypeAmount > 1;
+
+	if (boss)
+	{
+		bossLife = (float)boss->life / boss->maxLife;
+		bossExist = boss->bossActivated;
+	}
+	else
+	{
+		bossExist = false;
+	}
 }
 
 void UGame_Widget::SetWidget()

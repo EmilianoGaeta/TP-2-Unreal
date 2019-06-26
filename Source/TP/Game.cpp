@@ -12,7 +12,12 @@ void AGame::BeginPlay()
 	{
 		lifeW = CreateWidget<UUserWidget>(this, lifeWidget);
 		if (lifeW)
+		{
 			lifeW->AddToViewport();
+			auto l = Cast<UGame_Widget>(lifeW);
+			if (l && myBoss)
+				l->boss = myBoss;
+		}
 	}
 	if (messageWidget)
 	{

@@ -5,6 +5,7 @@
 #include "Engine.h"
 #include "Engine/World.h"
 #include "Ship.h"
+#include "Boss.h"
 #include "Blueprint/UserWidget.h"
 #include "Game_Widget.generated.h"
 
@@ -43,6 +44,12 @@ public:
 		bool bulletsAvailable;
 	UPROPERTY(BlueprintReadWrite)
 		bool weaponsAvailable;
+	UPROPERTY(BlueprintReadWrite)
+		ABoss* boss;
+	UPROPERTY(BlueprintReadWrite)
+		float bossLife;
+	UPROPERTY(BlueprintReadWrite)
+		bool bossExist;
 
 private:
 

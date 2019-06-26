@@ -4,6 +4,8 @@
 
 #include "Engine.h"
 #include "Engine/World.h"
+#include "Game_Widget.h"
+#include "Boss.h"
 #include "Ship.h"
 #include "GameFramework/PlayerController.h"
 #include "Game.generated.h"
@@ -36,6 +38,8 @@ public:
 	
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(BlueprintReadWrite)
+		ABoss* myBoss;
 
 private:
 
