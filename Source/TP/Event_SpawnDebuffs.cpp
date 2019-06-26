@@ -27,6 +27,10 @@ void AEvent_SpawnDebuffs::Tick(float DeltaTime)
 				if (myDebuff)
 					w->SpawnActor<ADebuff>(myDebuff, spawnPoints[i]->GetActorLocation(), spawnPoints[i]->GetActorRotation(), parameters);
 			}
+
+			for (int i = 0; i < myNodes.Num(); i++)
+				myNodes[i]->Activate();
+
 			iAMActive = false;
 		}
 	}
