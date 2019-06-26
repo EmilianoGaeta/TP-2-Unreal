@@ -320,6 +320,8 @@ void AShip::OnOverlapBooster(class UPrimitiveComponent* OverlappedComp, class AA
 		}
 		else if(b->type == Pickable_Type::Life_Booster)
 		{
+			showMessage = true;
+			message = FText::FromString(FString(TEXT("NAVE REPARAADA")));
 			lifeInterface += life / 3;
 			if (lifeInterface > life) lifeInterface = life;
 		}
