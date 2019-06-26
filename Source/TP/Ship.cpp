@@ -116,11 +116,6 @@ void AShip::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("MoveLeftRight", this, &AShip::SetMovementRight);
 	PlayerInputComponent->BindAxis("DirViewX", this, &AShip::SetDirectionForward);
 	PlayerInputComponent->BindAxis("DirViewY", this, &AShip::SetDirectionRight);
-
-	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &AShip::Shoot);
-	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &AShip::Pause);
-	PlayerInputComponent->BindAction("ChangeBullet", IE_Pressed, this, &AShip::SetBullet);
-	PlayerInputComponent->BindAction("ChangeWeapon", IE_Pressed, this, &AShip::SetWeapon);
 }
 
 void AShip::Move(float forward, float right)
