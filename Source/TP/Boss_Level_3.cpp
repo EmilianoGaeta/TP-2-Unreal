@@ -1,18 +1,18 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Boss_Level_1.h"
+#include "Boss_Level_3.h"
 
 
 // Sets default values
-ABoss_Level_1::ABoss_Level_1()
+ABoss_Level_3::ABoss_Level_3()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
 
 // Called when the game starts or when spawned
-void ABoss_Level_1::BeginPlay()
+void ABoss_Level_3::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -20,8 +20,10 @@ void ABoss_Level_1::BeginPlay()
 		myEyesBombFirst[i]->active = false;
 	for (int i = 0; i < myEyesBombSecond.Num(); i++)
 		myEyesBombSecond[i]->active = false;
+	for (int i = 0; i < myEyesBombThird.Num(); i++)
+		myEyesBombThird[i]->active = false;
 
-	shield->myDeath.AddDynamic(this, &ABoss_Level_1::NextFace);
+	shield->myDeath.AddDynamic(this, &ABoss_Level_3::NextFace);
 	shield->activate = false;
 
 	_phase = 0;
@@ -32,6 +34,7 @@ void ABoss_Level_1::BeginPlay()
 	_ship = GetWorld()->GetFirstPlayerController()->GetPawn();
 
 	_shootTimer = 0;
+	_spawnTimer = 0;
 	_timerHit = 0;
 	hit = false;
 
@@ -43,17 +46,29 @@ void ABoss_Level_1::BeginPlay()
 }
 
 // Called every frame
-void ABoss_Level_1::Tick(float DeltaTime)
+void ABoss_Level_3::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 	if (!_activate) return;
 
-	if ((float)lifeInterface / maxLife < 0.5f && _phase == 1)
+	if ((float)lifeInterface / maxLife < 0.8f && _phase == 1)
+		NextFace();
+	if((float)lifeInterface / maxLife < 0.4f && _phase == 2)
 		NextFace();
 
 	if (death)
 		Death();
+
+	if (_phase >= 1) 
+	{
+		_spawnTimer += DeltaTime;
+		if (_spawnTimer >= spawnTime) 
+		{
+			_spawnTimer = 0;
+			SpawnSpikes();
+		}
+	}
 
 	auto dir = _ship->GetActorLocation() - GetActorLocation();
 	SetActorRotation(FRotator(0, dir.Rotation().Yaw, 0));
@@ -71,7 +86,7 @@ void ABoss_Level_1::Tick(float DeltaTime)
 	}
 
 	_shootTimer += DeltaTime;
-	if(_shootTimer >= shootTime)
+	if (_shootTimer >= shootTime)
 	{
 		UWorld* world = GetWorld();
 		for (auto i = 0; i < spawnPoints.Num(); i++)
@@ -82,22 +97,53 @@ void ABoss_Level_1::Tick(float DeltaTime)
 	}
 }
 
-void ABoss_Level_1::NextFace()
+void ABoss_Level_3::SpawnSpikes()
 {
-	_phase++;
-	if(_phase == 1)
+	UWorld* world = GetWorld();
+	FActorSpawnParameters params;
+	for (int i = 0; i < spawns1.Num(); i++)
 	{
-		for (int i = 0; i < myEyesBombFirst.Num(); i++)
-			myEyesBombFirst[i]->active = true;
-	}
-	else if(_phase == 2)
-	{
-		for (int i = 0; i < myEyesBombSecond.Num(); i++)
-			myEyesBombSecond[i]->active = true;
+		auto s = world->SpawnActor<ABomb>(spikeBomb, spawns1[i]->GetTransform(), params);
+		auto sp = Cast<ABomb_Spike>(s);
+		if(s)
+			sp->bombType = Spike_Bomb_Type::Movable;
 	}
 }
 
-void ABoss_Level_1::Damage(int damage)
+void ABoss_Level_3::NextFace()
+{
+	_phase += 1;
+	if (_phase == 1)
+	{
+		for (int i = 0; i < myEyesBombFirst.Num(); i++)
+			myEyesBombFirst[i]->active = true;
+
+		GEngine->AddOnScreenDebugMessage(1, 0.5f, FColor::Red, TEXT("1"));
+	}
+	else if (_phase == 2)
+	{
+		GEngine->AddOnScreenDebugMessage(1, 0.5f, FColor::Red, TEXT("2"));
+
+		for (int i = 0; i < myEyesBombSecond.Num(); i++)
+			myEyesBombSecond[i]->active = true;
+	}
+	else if(_phase == 3)
+	{
+		GEngine->AddOnScreenDebugMessage(1, 0.5f, FColor::Red, TEXT("3"));
+
+		for (int i = 0; i < myEyesBombThird.Num(); i++)
+			myEyesBombThird[i]->active = true;
+
+		UWorld* world = GetWorld();
+		FActorSpawnParameters params;
+		for (int i = 0; i < spawns2.Num(); i++)
+		{
+			world->SpawnActor<ABomb>(atomBomb, spawns2[i]->GetTransform(), params);
+		}
+	}
+}
+
+void ABoss_Level_3::Damage(int damage)
 {
 	lifeInterface -= damage;
 	life = lifeInterface;
@@ -110,7 +156,7 @@ void ABoss_Level_1::Damage(int damage)
 		death = true;
 }
 
-void ABoss_Level_1::Death()
+void ABoss_Level_3::Death()
 {
 	Super::Death();
 
@@ -118,7 +164,7 @@ void ABoss_Level_1::Death()
 	Destroy();
 }
 
-void ABoss_Level_1::Activate()
+void ABoss_Level_3::Activate()
 {
 	Super::Activate();
 	_activate = true;
