@@ -72,8 +72,11 @@ void ABomb_Eye::Aim()
 	else
 	{
 		_pivot->SetRelativeRotationExact(FRotator(0, _pivot->RelativeRotation.Yaw + _deltaTime * rotationSpeed * dir, 0));
-		if (_pivot->RelativeRotation.Yaw >= anlgeOfMovement / 2 || _pivot->RelativeRotation.Yaw <= -anlgeOfMovement / 2)
+		if (_pivot->RelativeRotation.Yaw >= anlgeOfMovement / 2 || _pivot->RelativeRotation.Yaw <= -anlgeOfMovement / 2) 
+		{
+			_pivot->SetRelativeRotationExact(FRotator(0, (anlgeOfMovement / 2) * dir, 0));
 			dir *= -1;
+		}
 	}
 }
 

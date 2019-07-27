@@ -8,6 +8,15 @@ void AGame::BeginPlay()
 {
 	Super::BeginPlay();
 
+	if (messageWidget)
+	{
+		messageW = CreateWidget<UUserWidget>(this, messageWidget);
+		if (messageW) 
+		{
+			messageW->AddToViewport();
+			messageW->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
 	if (lifeWidget)
 	{
 		lifeW = CreateWidget<UUserWidget>(this, lifeWidget);
@@ -17,15 +26,6 @@ void AGame::BeginPlay()
 			auto l = Cast<UGame_Widget>(lifeW);
 			if (l && myBoss)
 				l->boss = myBoss;
-		}
-	}
-	if (messageWidget)
-	{
-		messageW = CreateWidget<UUserWidget>(this, messageWidget);
-		if (messageW) 
-		{
-			messageW->AddToViewport();
-			messageW->SetVisibility(ESlateVisibility::Hidden);
 		}
 	}
 	if (pauseWidget)
@@ -49,9 +49,12 @@ void AGame::Tick(float DeltaTime)
 	{
 		if (ship->showMessage)
 		{
+			if (_timer == 0) 
+				messageW->SetVisibility(ESlateVisibility::Visible);
+
+
 			_timer += DeltaTime;
-			messageW->SetVisibility(ESlateVisibility::Visible);
-			if(_timer>= messageTime)
+			if(_timer >= messageTime)
 			{
 				messageW->SetVisibility(ESlateVisibility::Hidden);
 				_timer = 0;
