@@ -69,7 +69,7 @@ void ABomb_Eye::Aim()
 		SetActorRotation(FRotator(0, dirToWatch.Rotation().Yaw, 0));
 
 	}
-	else
+	else if(anlgeOfMovement > 0)
 	{
 		_pivot->SetRelativeRotationExact(FRotator(0, _pivot->RelativeRotation.Yaw + _deltaTime * rotationSpeed * dir, 0));
 		if (_pivot->RelativeRotation.Yaw >= anlgeOfMovement / 2 || _pivot->RelativeRotation.Yaw <= -anlgeOfMovement / 2) 
