@@ -28,6 +28,11 @@ public:
 	ABoss_Level_3();
 
 	UPROPERTY(EditAnywhere)
+		int damage;
+	UPROPERTY(EditAnywhere)
+		float speed;
+
+	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ABullet> bullet;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ABomb> spikeBomb;
@@ -60,6 +65,8 @@ public:
 		TArray<UChildActorComponent*> spawnPoints;
 	UPROPERTY(BlueprintReadWrite)
 		UStaticMeshComponent* mesh;
+	UPROPERTY(BlueprintReadWrite)
+		USphereComponent* meshMouth;
 
 	virtual void Activate() override;
 
@@ -96,5 +103,15 @@ private:
 	
 	void SpawnSpikes();
 	
+	float _timer;
 	
+	FVector _center;
+	FVector _nextPos;
+	FVector _dirToMove;
+
+	bool _isMoving;
+	bool _return;
+
+	void Move(float deltaTime);
+
 };

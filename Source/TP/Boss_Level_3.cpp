@@ -36,6 +36,7 @@ void ABoss_Level_3::BeginPlay()
 	_shootTimer = 0;
 	_spawnTimer = 0;
 	_timerHit = 0;
+	_timer = 0;
 	hit = false;
 
 	myMaterial = UMaterialInstanceDynamic::Create(mesh->GetMaterial(0), this);
@@ -43,6 +44,10 @@ void ABoss_Level_3::BeginPlay()
 	myMaterial->SetScalarParameterValue("Hit", 0);
 
 	_activate = false;
+
+	_center = GetActorLocation();
+	_isMoving = false;
+	_return = false;
 }
 
 // Called every frame
@@ -85,16 +90,48 @@ void ABoss_Level_3::Tick(float DeltaTime)
 		}
 	}
 
-	_shootTimer += DeltaTime;
-	if (_shootTimer >= shootTime)
+	if (!_isMoving)
 	{
-		UWorld* world = GetWorld();
-		for (auto i = 0; i < spawnPoints.Num(); i++)
+		_shootTimer += DeltaTime;
+		if (_shootTimer >= shootTime)
 		{
-			SpawnBullet(world, bullet, spawnPoints[i]);
+			float random = FMath::RandRange(0, 100);
+			if (_phase < 1) random = 0;
+
+			if (random <= 40)
+			{
+				UWorld* world = GetWorld();
+				for (auto i = 0; i < spawnPoints.Num(); i++)
+				{
+					SpawnBullet(world, bullet, spawnPoints[i]);
+				}
+				_shootTimer = 0;
+			}
+			else
+			{
+				_shootTimer = 0;
+				_isMoving = true;
+
+				_dirToMove = _ship->GetActorLocation() - GetActorLocation();
+				_nextPos = GetActorLocation() + _dirToMove;
+				_dirToMove = _dirToMove.GetUnsafeNormal();
+			}
 		}
-		_shootTimer = 0;
 	}
+	else
+		Move(DeltaTime);
+
+	if (meshMouth->IsOverlappingActor(_ship))
+	{
+		_timer += DeltaTime;
+		if (_timer >= 0.25f)
+		{
+			_timer = 0;
+			Cast<IGetDamage>(_ship)->Damage(damage);
+		}
+	}
+	else
+		_timer = 0;
 }
 
 void ABoss_Level_3::SpawnSpikes()
@@ -169,5 +206,34 @@ void ABoss_Level_3::Activate()
 	Super::Activate();
 	_activate = true;
 	shield->activate = _activate;
+}
+
+void ABoss_Level_3::Move(float deltaTime)
+{
+	if (!_return) 
+	{
+		if(FVector::Dist(_nextPos,GetActorLocation()) > deltaTime * speed * 100)
+		{
+			SetActorLocation(GetActorLocation() + _dirToMove * deltaTime*speed * 100);
+		}
+		else
+		{
+			SetActorLocation(_nextPos);
+			_return = true;
+		}
+	}
+	else
+	{
+		if (FVector::Dist(_center, GetActorLocation()) > deltaTime * speed * 100)
+		{
+			SetActorLocation(GetActorLocation() - _dirToMove * deltaTime*speed * 100);
+		}
+		else
+		{
+			SetActorLocation(_center);
+			_return = false;
+			_isMoving = false;
+		}
+	}
 }
 
