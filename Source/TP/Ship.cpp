@@ -40,8 +40,8 @@ void AShip::BeginPlay()
 	shielMesh->SetGenerateOverlapEvents(false);
 	shielMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
-	bulletsTypesAmount = 1;
-	weaponsTypeAmount = 1;
+	bulletsTypesAmount = 3;
+	weaponsTypeAmount = 3;
 	_dirView = FVector(0, 0, 0);
 	_dirMovement = FVector(0, 0, 0);
 
