@@ -11,29 +11,25 @@
 #include "Weapon.h"
 #include "ActorToDestroy.h"
 #include "Boss.h"
-#include "Boss_Level_1.generated.h"
+#include "Boss_Level_5.generated.h"
 
+/**
+ * 
+ */
 UCLASS()
-class TP_API ABoss_Level_1 : public ABoss, public IGetDamage, public IWeapon
+class TP_API ABoss_Level_5 : public ABoss, public IGetDamage, public IWeapon
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ABoss_Level_1();
+public:
+
+	ABoss_Level_5();
 
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ABullet> bullet;
 	UPROPERTY(EditAnywhere)
-		TArray<ABomb_Eye*> myEyesBombFirst;
-	UPROPERTY(EditAnywhere)
-		TArray<ABomb_Eye*> myEyesBombSecond;
+		TArray<ABomb_Eye*> myEyeBombs;
 	UPROPERTY(EditAnywhere)
 		AActorToDestroy* shield;
-	UPROPERTY(EditAnywhere)
-		AActor* pivot;
-	UPROPERTY(EditAnywhere)
-		float pivotSpeed;
 	UPROPERTY(EditAnywhere)
 		float shootTime;
 	UPROPERTY(EditAnywhere)
@@ -47,15 +43,15 @@ public:
 	virtual void Activate() override;
 
 protected:
-	// Called when the game starts or when spawned
+
 	virtual void BeginPlay() override;
 
 	UMaterialInstanceDynamic* myMaterial;
 
 	virtual void Death() override;
 
-public:	
-	// Called every frame
+public:
+
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void Damage(int damage) override;
@@ -75,4 +71,7 @@ private:
 	bool hit;
 
 	bool _activate;
+	
+	
+	
 };
