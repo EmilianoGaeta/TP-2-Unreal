@@ -25,13 +25,27 @@ public:
 	ABoss_Level_5();
 
 	UPROPERTY(EditAnywhere)
+		int damage;
+	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ABullet> bullet;
 	UPROPERTY(EditAnywhere)
 		TArray<ABomb_Eye*> myEyeBombs;
 	UPROPERTY(EditAnywhere)
 		AActorToDestroy* shield;
 	UPROPERTY(EditAnywhere)
+		AActor* pivot;
+	UPROPERTY(EditAnywhere)
+		float pivotSpeed;
+	UPROPERTY(EditAnywhere)
 		float shootTime;
+	UPROPERTY(EditAnywhere)
+		TArray<AActor *> fireBalls;
+	UPROPERTY(EditAnywhere)
+		float fireMaxDistanece;
+	UPROPERTY(EditAnywhere)
+		float fireMinDistanece;
+	UPROPERTY(EditAnywhere)
+		float fireBallSpeed;
 	UPROPERTY(EditAnywhere)
 		AEvent_OCDoor* openDoor;
 
@@ -72,6 +86,7 @@ private:
 
 	bool _activate;
 	
-	
-	
+	float _timer;	
+	float _currentFireDistance;
+	int _fireDir;
 };

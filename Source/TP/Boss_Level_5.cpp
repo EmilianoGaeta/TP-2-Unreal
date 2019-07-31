@@ -30,6 +30,7 @@ void ABoss_Level_5::BeginPlay()
 
 	_shootTimer = 0;
 	_timerHit = 0;
+	_timer = 0;
 	hit = false;
 
 	myMaterial = UMaterialInstanceDynamic::Create(mesh->GetMaterial(0), this);
@@ -37,6 +38,13 @@ void ABoss_Level_5::BeginPlay()
 	myMaterial->SetScalarParameterValue("Hit", 0);
 
 	_activate = false;
+
+	for (int i = 0; i < fireBalls.Num(); i++)
+	{
+		fireBalls[i]->SetActorRelativeLocation(FVector(0, 0, 0));
+	}
+	_currentFireDistance = 0;
+	_fireDir = 1;
 }
 
 // Called every frame
@@ -54,6 +62,8 @@ void ABoss_Level_5::Tick(float DeltaTime)
 
 	auto dir = _ship->GetActorLocation() - GetActorLocation();
 	SetActorRotation(FRotator(0, dir.Rotation().Yaw, 0));
+
+	pivot->SetActorRotation(pivot->GetActorRotation() + FRotator(0, DeltaTime * pivotSpeed, 0));
 
 	if (hit)
 	{
@@ -75,16 +85,36 @@ void ABoss_Level_5::Tick(float DeltaTime)
 		}
 		_shootTimer = 0;
 	}
+
+	if (_phase > 0) 
+	{
+		for (int i = 0; i < fireBalls.Num(); i++)
+		{
+			if (fireBalls[i]->IsOverlappingActor(_ship))
+			{
+				_timer += DeltaTime;
+				if (_timer >= 0.15f)
+				{
+					_timer = 0;
+					Cast<IGetDamage>(_ship)->Damage(damage);
+				}
+			}
+			
+			_currentFireDistance += DeltaTime * _fireDir * fireBallSpeed;
+			if (_currentFireDistance > fireMaxDistanece)
+				_fireDir = -1;
+			if (_currentFireDistance < fireMinDistanece)
+				_fireDir = 1;
+
+			fireBalls[i]->SetActorRelativeLocation(fireBalls[i]->GetActorForwardVector() * _currentFireDistance * 100);
+		}
+	}
 }
 
 void ABoss_Level_5::NextFace()
 {
 	_phase++;
-	if (_phase == 1)
-	{
-
-	}
-	else if (_phase == 2)
+	if (_phase == 2)
 	{
 		for (int i = 0; i < myEyeBombs.Num(); i++)
 			myEyeBombs[i]->active = true;
