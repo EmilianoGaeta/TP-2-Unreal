@@ -93,7 +93,7 @@ void ABoss_Level_5::Tick(float DeltaTime)
 			if (fireBalls[i]->IsOverlappingActor(_ship))
 			{
 				_timer += DeltaTime;
-				if (_timer >= 0.15f)
+				if (_timer >= 0.05f)
 				{
 					_timer = 0;
 					Cast<IGetDamage>(_ship)->Damage(damage);
